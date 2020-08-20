@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style >
+  body{
+		background-color: #638CB8;
+	}
+</style>
+
+
+
+
+  <div class="jumbotron">
+
+
+ <h2>Are you sure you want to delete <strong>"{{item}}"</strong>?</h2>
+
+<a class="btn btn-danger" href="{% url 'list' %}" >Cancel</a>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<input class="btn btn-primary" type="submit" name="Confirm">
+</form>
+
+</div>

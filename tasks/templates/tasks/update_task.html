@@ -1,0 +1,16 @@
+
+<style >
+  body{
+		background-color: #638CB8;
+	}
+</style>
+
+<div class="jumbotron">
+<h2>Update Task</h2>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" name="Update Task">
+</form>
+</div>
